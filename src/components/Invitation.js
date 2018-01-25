@@ -1,13 +1,21 @@
-// Code Invitation Component Here
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default class Invitation extends React.Component {
-  render () {
-    return (
-      <div className="invitation">
-        <h1>You've been invited!</h1>
-        {this.props.children}
-      </div>
-    )
-  }
+const Invitation = (props) => {
+  return(
+    <div>
+      <h1>You've been invited!</h1>
+      <div>{props.children}</div>
+    </div>
+  )
 }
+
+// Invitation.defaultProps = {
+//
+// };
+//
+// Invitation.propTypes = {
+//
+// };
+
+export default Invitation;
